@@ -59,7 +59,7 @@ async function getProductReviews(req,res,next){
                 id : parseInt(req.params.id)
             },
             select :{
-                ratings: true
+                reviews: true
             }
         })
         res.json(product_ratings)
